@@ -1,0 +1,198 @@
+ * {
+    font-family: "MS Sans-Serif", sans-serif;
+    color: white;
+}
+
+body {
+    background-color: #208C71 !important;
+}
+
+.standbild {
+    width: 350px;
+}
+
+.navbar-custom {
+    background-color: #C0C0C0;
+    border: 1px solid #8a8a8a;
+    height: 26px;
+}
+
+.navbar a {
+    color: black;
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    background-color: #C0C0C0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.dropdown-menu a {
+    font-size: 19px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #000080;
+    color: white;
+}
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Win95 Window */
+.window {
+    background-color: #C0C0C0;
+    border: 1px solid black;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    width: 400px;
+    padding: 0;
+  }
+  
+  /* Title Bar */
+  .title-bar {
+    background-color: #000080;
+    height: 19px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .title {
+    color: #FFFFFF;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  /* Content Area */
+  .content {
+    padding: 10px;
+  }
+
+  .content li, p {
+    list-style: none;
+    text-align: left;
+    color: black;
+  }
+  
+  /* System Buttons */
+  .system-buttons {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .system-button img {
+    width: 19px;
+  }
+  
+  .system-button {
+    /*
+    width: 30px;
+    height: 30px;
+    border: 1px solid #000000;
+    */
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+.x {
+    margin-left: 2px;
+  }
+  
+  .system-button:hover {
+    background-color: none;
+  }
+
+  .system-button:active {
+    transform: scale(0.93);
+  }
+
+  /* Error Window */
+
+  /* Win95 Window */
+.window {
+    background-color: #C0C0C0;
+    border: 1px solid black;
+    border-left: 1px solid white;
+    border-top: 1px solid white;
+    width: 400px;
+    padding: 0;
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it's on top */
+}
+
+/* Title Bar */
+.title-bar {
+    background-color: #000080;
+    height: 19px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #FFFFFF;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+/* Content Area */
+.content {
+    padding: 10px;
+}
+
+/* System Buttons */
+.system-buttons {
+    display: flex;
+    margin-left: auto; /* Align buttons to the right */
+}
+
+.system-button img {
+    width: 19px;
+}
+
+.system-button {
+    margin-right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.x {
+    margin-left: 2px;
+}
+
+.system-button:hover {
+    background-color: none;
+}
+
+.system-button:active {
+    transform: scale(0.93);
+}
+
+/* Loading Screen */
+.loading-screen {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    display: none; /* Hidden by default */
+    z-index: 99999; /* Ensure it's on top */
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.loading-screen img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

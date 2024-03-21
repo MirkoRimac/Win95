@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Win95 Site</title>
+    <link rel="stylesheet" href="style.css">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script> 
+
+    <script src="https://unpkg.com/webamp@1.4.0/built/webamp.bundle.min.js"></script> 
+</head>
+<body>
+    <!-- Page -->
+    <div class="container-fluid text-center">
+        <h1>Win95</h1>
+    </div>
+
+    <!-- Windows Error -->
+    <audio id="windows-error-sound" src="./mp3/Microsoft Windows XP Error - Sound Effect (HD).mp3"></audio>
+    <!-- Windows 95-style error modal -->
+<div id="win95-error" class="window">
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <div class="title">Error</div>
+        <div class="system-buttons">
+            <div class="system-button"><img src="./img/minimieren.png" alt=""></div>
+            <div class="system-button"><img src="./img/fenster.png" alt=""></div>
+            <div class="system-button"><img class="x" src="./img/x.png" alt=""></div>
+        </div>
+    </div>
+    <!-- Content Area -->
+    <div class="content">
+        <p>An error occurred while loading the website.</p>
+        <button id="fix-it-button">Fix it</button>
+    </div>
+</div>
+
+<!-- Old school loading screen -->
+<div id="loading-screen" class="loading-screen container-fluid text-center">
+    <img src="./gif/loading.gif" alt="Loading...">
+</div>
+
+    <!-- Windows Error End -->
+
+    <div class="row container-fluid">
+        <div class="col-sm-4 text-right"><img src="./img/standbild_nobg.png" class="standbild" alt=""></div>
+        <div class="col-sm-4"></div>
+    </div>
+    <div class="row container-fluid">
+        <div class="col-sm-6">
+            <!-- Winamp -->
+            <div style="width:40px; height:40px; position:absolute; bottom:0px; left:0px;">
+                <div id="winamp-container"></div>
+            </div>
+            <!-- Winamp End -->
+        </div>
+        <div class="col-sm-6 text-center">
+            <!-- Win95 Window -->
+    <div class="window">
+        <!-- Title Bar -->
+        <div class="title-bar">
+          <div class="title">About me</div>
+          <div class="system-buttons">
+            <div class="system-button"><img src="./img/minimieren.png" alt=""></div>
+            <div class="system-button"><img src="./img/fenster.png" alt=""></div>
+            <div class="system-button"><img class="x" src="./img/x.png" alt=""></div>
+          </div>
+        </div>
+        
+        <!-- Content Area -->
+        <div class="content">
+          <p>This is the content of the window.</p>
+          <ul>
+            <li>- My name is Mirko.</li>
+            <li>- I like Asana.</li>
+            <li>- I enjoy building stupid Websites like this one!</li>
+          </ul>
+        </div>
+      </div>
+      <!-- Win95 Window End -->
+        </div>
+    </div>
+
+    <!-- Navbar Bottom Test-->
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom navbar-expand-sm fixed-bottom">
+
+        <!-- Logo Dropdown -->
+        <div class="dropdown dropup">
+            <a href="#" class="navbar-brand dropdown-toggle" id="logoDropdown" data-toggle="dropdown">
+                <img src="./img/start.png" class="mr-1" style="height: 35px;" alt="">
+            </a>
+            <div class="dropdown-menu" aria-labelledby="logoDropdown">
+                <!-- Dropdown links -->
+                <a href="#" class="dropdown-item nav-link error-trigger"><img src="./img/file-explorer.png" alt="">About me</a>
+                <a href="#" class="dropdown-item "><img src="./img/programs.png" alt="">Programs</a>
+                <!-- Add more dropdown items as needed -->
+            </div>
+        </div>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a href="#" class="nav-link"><img src="./img/file-explorer.png" alt=""></a>
+            </li>
+        </ul>
+    </nav>
+
+    <script src="./script.js"></script>
+</body>
+</html>
